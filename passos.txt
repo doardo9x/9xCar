@@ -1,0 +1,10 @@
+Configuração da conta local do GIT:
+    git config --global user.name doardo9x
+     
+
+Criar um projeto AspNet MVC
+    dotnet new mvc -o 9xCar
+
+Executar o projeto
+    dotnet run
+    dotnet watch run
