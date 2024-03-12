@@ -1,0 +1,78 @@
+[
+    {
+        "Nome": "Gol",
+        "Tipo": "Hatch",
+        "Marca": "Volksvagen",
+        "Imagem": "\\img\\Volksvagen\\Gol.jpg"
+    },
+    {
+        "Nome": "Nivus",
+        "Tipo": "SUV",
+        "Marca": "Volksvagen",
+        "Imagem": "\\img\\Volksvagen\\Nivus.jpg"
+    },
+    {
+        "Nome": "Polo",
+        "Tipo": "Hatch",
+        "Marca": "Volksvagen",
+        "Imagem": "\\img\\Volksvagen\\Polo.jpg"
+    },
+    {
+        "Nome": "Tiguan",
+        "Tipo": "SUV",
+        "Marca": "Volksvagen",
+        "Imagem": "\\img\\Volksvagen\\Tiguan.jpg"
+    },
+    {
+        "Nome": "Astra-SS",
+        "Tipo": "Sedan",
+        "Marca": "Chevrolet",
+        "Imagem": "\\img\\Chevrolet\\Astra-SS.jpeg"
+        
+    },
+    {
+        "Nome": "Corvete-C8",
+        "Tipo": "Cupê",
+        "Marca": "Chevrolet",
+        "Imagem": "\\img\\Chevrolet\\Corvette-C8.jpg"
+    },
+    {
+        "Nome": "Cruze",
+        "Tipo": "Hatch",
+        "Marca": "Chevrolet",
+        "Imagem": "\\img\\Chevrolet\\Cruze.jpg"
+    },
+    {
+        "Nome": "Tracker-Rs",
+        "Tipo": "SUV",
+        "Marca": "Chevrolet",
+        "Imagem": "\\img\\Chevrolet\\Tracker-RS.jpg"
+    },
+    {
+        "Nome": "320i-M",
+        "Tipo": "Cupê",
+        "Marca": "Bmw",
+        "Imagem": "\\img\\Bmw\\320I-M.jpg"
+    },
+    {
+        "Nome": "M2",
+        "Tipo": "Cupê",
+        "Marca": "Bmw",
+        "Imagem": "\\img\\Bmw\\M2.jpeg"
+    },
+
+    {
+        "Nome": "X6-M",
+        "Tipo": "SUV-Cupê",
+        "Marca": "Bmw",
+        "Imagem": "\\img\\Bmw\\X6M.jpg"
+    },
+
+    {
+        "Nome": "X1",
+        "Tipo": "SUV",
+        "Marca": "Bmw",
+        "Imagem": "\\img\\Bmw\\X1.jpg"
+    }
+
+]
