@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "Volksvagen",
+        "logo": "\\img\\Volksvagen\\VOLKSWAGEN.png"
+    },
+    {
+        "nome": "Chevrolet",
+        "logo": "\\img\\Chevrolet\\CHEVROLET.png"
+    },
+    {
+        "nome": "Bmw",
+        "logo": "\\img\\Bmw\\BMW.png"
+    },
+    {
+        "nome": "hyundai",
+        "logo": "\\img\\Hyundai\\HYUNDAI.png"
+    }
+]

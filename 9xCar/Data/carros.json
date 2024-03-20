@@ -23,31 +23,33 @@
         "Marca": "Volksvagen",
         "Imagem": "\\img\\Volksvagen\\Tiguan.jpg"
     },
-    {
-        "Nome": "Astra-SS",
-        "Tipo": "Sedan",
-        "Marca": "Chevrolet",
-        "Imagem": "\\img\\Chevrolet\\Astra-SS.jpeg"
-        
-    },
-    {
-        "Nome": "Corvete-C8",
-        "Tipo": "Cupê",
-        "Marca": "Chevrolet",
-        "Imagem": "\\img\\Chevrolet\\Corvette-C8.jpg"
-    },
-    {
-        "Nome": "Cruze",
-        "Tipo": "Hatch",
-        "Marca": "Chevrolet",
-        "Imagem": "\\img\\Chevrolet\\Cruze.jpg"
-    },
-    {
-        "Nome": "Tracker-Rs",
-        "Tipo": "SUV",
-        "Marca": "Chevrolet",
-        "Imagem": "\\img\\Chevrolet\\Tracker-RS.jpg"
-    },
+
+        {
+            "Nome": "Astra-SS",
+            "Tipo": "Sedan",
+            "Marca": "Chevrolet",
+            "Imagem": "\\img\\Chevrolet\\Astra-SS.jpeg"
+            
+        },
+        {
+            "Nome": "Corvete-C8",
+            "Tipo": "Cupê",
+            "Marca": "Chevrolet",
+            "Imagem": "\\img\\Chevrolet\\Corvette-C8.jpg"
+        },
+        {
+            "Nome": "Cruze",
+            "Tipo": "Hatch",
+            "Marca": "Chevrolet",
+            "Imagem": "\\img\\Chevrolet\\Cruze.jpg"
+        },
+        {
+            "Nome": "Tracker-Rs",
+            "Tipo": "SUV",
+            "Marca": "Chevrolet",
+            "Imagem": "\\img\\Chevrolet\\Tracker-RS.jpg"
+        },
+
     {
         "Nome": "320i-M",
         "Tipo": "Cupê",
@@ -73,6 +75,31 @@
         "Tipo": "SUV",
         "Marca": "Bmw",
         "Imagem": "\\img\\Bmw\\X1.jpg"
-    }
+    },
+
+        {
+            "Nome": "Hb20 - Hatch",
+            "Tipo": "SUV",
+            "Marca": "Hyundai",
+            "Imagem": "\\img\\Hyundai\\Hb20-Hatch.jpg"
+        },
+        {
+            "Nome": "Hb20 - RSpec",
+            "Tipo": "SUV",
+            "Marca": "Hyundai",
+            "Imagem": "\\img\\Hyundai\\Hb20RSpec.jpg"
+        },
+        {
+            "Nome": "I30",
+            "Tipo": "SUV",
+            "Marca": "Hyundai",
+            "Imagem": "\\img\\Hyundai\\I30.jpg"
+        },
+        {
+            "Nome": "Sonata",
+            "Tipo": "SUV",
+            "Marca": "Hyundai",
+            "Imagem": "\\img\\Hyundai\\Sonata.jpg"
+        }
 
 ]
