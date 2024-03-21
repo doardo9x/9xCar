@@ -1,6 +1,8 @@
 using System.Diagnostics;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using _9xCar.Models;
+
 
 namespace _9xCar.Controllers;
 
@@ -15,7 +17,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<Carro> carros = [];
+        using (StreamReader leitor = new("Data\\carros.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            carros = JsonSerializer.Deserialize<List<Carro>>(dados);
+        }
+        return View(carros);
     }
 
     public IActionResult Privacy()
