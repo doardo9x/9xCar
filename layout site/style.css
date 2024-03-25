@@ -15,10 +15,15 @@
     border: #a82223;
 }
 
+.card{
+    margin: 20px;
+}
+
 .contCard
 {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     width: 100%;
     height: auto;
-    border: 1px solid black;
 }
