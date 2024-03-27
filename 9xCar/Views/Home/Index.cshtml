@@ -1,6 +1,6 @@
 ﻿@model List<Carro>
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <!-- Navigation-->
@@ -53,86 +53,25 @@
 <section id="projects">
     <div class="contCard center">
 
+            @foreach (var carro in Model)
+            {
+                <!-- Card Carros -->
+                <div class="card @string.Join(' ', carro.Tipo)" style="width: 18rem;">
+                    <img src="@carro.Imagem" alt="BMW X6M" class="card-img-top" alt="@carro.Nome">
+                    <div class="card-body">
+                        <div class="cont-title center">
+                            <h5 class="card-title">@carro.Nome</h5>
+                        </div>
+                        <p class="card-text">@carro.Marca</p>
+                        <p class="card-text">@carro.Tipo</p>
+                        <div class="cont-butCard center">
+                            <a href="#" class="btn btn-primary" id="buttonsColor">Mais detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Card Carros -->
+            }
 
-            <!-- Card Carros -->
-            <div class="card" style="width: 18rem;">
-                <img src="~/img/Bmw/X6M.jpg" alt="BMW X6M" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="cont-title center">
-                        <h5 class="card-title">X6-M</h5>
-                    </div>
-                    <p class="card-text">Bmw</p>
-                    <p class="card-text">Suv Cupê</p>
-                    <div class="cont-butCard center">
-                        <a href="#" class="btn btn-primary" id="buttonsColor">Mais detalhes</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Card Carros -->
-            
-            <!-- Card Carros -->
-            <div class="card" style="width: 18rem;">
-                <img src="~/img/Bmw/X6M.jpg" alt="BMW X6M" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="cont-title center">
-                        <h5 class="card-title">X6-M</h5>
-                    </div>
-                    <p class="card-text">Bmw</p>
-                    <p class="card-text">Suv Cupê</p>
-                    <div class="cont-butCard center">
-                        <a href="#" class="btn btn-primary" id="buttonsColor">Mais detalhes</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Card Carros -->
-            
-            <!-- Card Carros -->
-            <div class="card" style="width: 18rem;">
-                <img src="~/img/Bmw/X6M.jpg" alt="BMW X6M" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="cont-title center">
-                        <h5 class="card-title">X6-M</h5>
-                    </div>
-                    <p class="card-text">Bmw</p>
-                    <p class="card-text">Suv Cupê</p>
-                    <div class="cont-butCard center">
-                        <a href="#" class="btn btn-primary" id="buttonsColor">Mais detalhes</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Card Carros -->
-            
-            <!-- Card Carros -->
-            <div class="card" style="width: 18rem;">
-                <img src="~/img/Bmw/X6M.jpg" alt="BMW X6M" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="cont-title center">
-                        <h5 class="card-title">X6-M</h5>
-                    </div>
-                    <p class="card-text">Bmw</p>
-                    <p class="card-text">Suv Cupê</p>
-                    <div class="cont-butCard center">
-                        <a href="#" class="btn btn-primary" id="buttonsColor">Mais detalhes</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Card Carros -->
-
-            <!-- Card Carros -->
-            <div class="card" style="width: 18rem;">
-                <img src="~/img/Bmw/X6M.jpg" alt="BMW X6M" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="cont-title center">
-                        <h5 class="card-title">X6-M</h5>
-                    </div>
-                    <p class="card-text">Bmw</p>
-                    <p class="card-text">Suv Cupê</p>
-                    <div class="cont-butCard center">
-                        <a href="#" class="btn btn-primary" id="buttonsColor">Mais detalhes</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Card Carros -->
     </div>
 
 </section>
