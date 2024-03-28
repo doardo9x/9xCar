@@ -9,5 +9,6 @@ namespace _9xCar.Models
     {
         public string Nome { get; set; }
         public string Logo { get; set; }
+        public string Cor { get; set; }
     }
 }
