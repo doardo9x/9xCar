@@ -32,6 +32,11 @@ public class HomeController : Controller
         ViewData["Marcas"] = marcas;
         return View(carros);
     }
+    
+    public IActionResult Details(int Id)
+    {
+        return View();
+    }
 
     public IActionResult Privacy()
     {
