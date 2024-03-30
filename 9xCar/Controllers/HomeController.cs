@@ -17,27 +17,42 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<Carro> carros = [];
-        using (StreamReader leitor = new("Data\\carros.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            carros = JsonSerializer.Deserialize<List<Carro>>(dados);
-        }
-        List<Marca> marcas = [];
-        using (StreamReader leitor = new("Data\\marcas.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            marcas = JsonSerializer.Deserialize<List<Marca>>(dados);
-        }
-        ViewData["Marcas"] = marcas;
+        List<Carro> carros = GetCarros();
+        List<Marca> marcas = GetMarcas();
+        ViewData ["Marcas"] = marcas;
         return View(carros);
     }
     
-    public IActionResult Details(int Id)
+    public IActionResult Details(int id)
     {
-        return View();
+        List<Carro> carros = GetCarros();
+        List<Marca> marcas = GetMarcas();
+        DetailsVM details = new() {
+            Marcas = marcas,
+            Atual = carros.FirstOrDefault(p => p.Numero == id),
+            Anterior = carros.OrderByDescending(p => p.Numero).FirstOrDefault(p => p.Numero < id),
+            Proximo = carros.OrderBy(p => p.Numero).FirstOrDefault(p => p.Numero > id),
+
+        };
+        return View(details);
     }
 
+    private List<Carro> GetCarros()
+    {
+        using (StreamReader leitor = new("Data\\carros.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            return JsonSerializer.Deserialize<List<Carro>>(dados);
+        }
+    }
+    private List<Marca> GetMarcas()
+    {
+        using (StreamReader leitor = new("Data\\marcas.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            return JsonSerializer.Deserialize<List<Marca>>(dados);
+        }
+    }
     public IActionResult Privacy()
     {
         return View();

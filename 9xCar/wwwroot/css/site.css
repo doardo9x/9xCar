@@ -13042,49 +13042,37 @@ body {
   padding: 5rem 0;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
+.center
+{
+    display: flex;
+    justify-content: center;
 }
 
-#title {
-  color: #a82223;
+#title
+{
+    color: #a82223;
 }
 
-#buttonsColor {
-  background-color: #a82223;
-  border: #a82223;
+#buttonsColor
+{
+    background-color: #a82223;
+    border: #a82223;
 }
 
-.card {
-  margin: 20px;
+.card{
+    margin: 20px;
 }
 
-.contCard {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  width: 100%;
-  height: auto;
+.contCard
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height: auto;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-#title {
-  color: #a82223;
-}
-
-#buttonsColor {
-  background-color: #a82223;
-  border: #a82223;
-}
-
-.contCard {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+#filtroMarcas
+{
+    padding-top: 20px;
 }

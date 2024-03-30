@@ -387,7 +387,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  --webkit-appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -445,7 +445,7 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  --webkit-appearance: textfield;
 }
 
 /* rtl:raw:
@@ -466,7 +466,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  --webkit-appearance: button;
 }
 
 output {
@@ -11231,32 +11231,8 @@ body {
     width: 100%;
     height: auto;
 }
-.center
-{
-    display: flex;
-    justify-content: center;
-}
 
-#title
+#filtroMarcas
 {
-    color: #a82223;
-}
-
-#buttonsColor
-{
-    background-color: #a82223;
-    border: #a82223;
-}
-
-.card{
-    margin: 20px;
-}
-
-.contCard
-{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    width: 100%;
-    height: auto;
+    padding-top: 20px;
 }

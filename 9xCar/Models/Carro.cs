@@ -7,7 +7,7 @@ namespace _9xCar.Models
 {
     public class Carro
     {
-        public int Id { get; set; }
+        public int Numero { get; set; }
         public string Nome { get; set; }
         public string Tipo { get; set; }
         public string Marca { get; set; }

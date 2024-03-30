@@ -1,54 +1,31 @@
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
+function filter(type) {
+    let cards, i;
+    let count = 0;
+    cards = document.getElementsByClassName("card");
+    buttons = document.getElementsByClassName("btn-filter");
+    for (i = 0; i < cards.length; i++) {
+        cards[i].parentElement.style.display = 'none';
+        if (cards[i].classList.contains(type) || type === "all") {
+            cards[i].parentElement.style.display = 'block';
+            count += 1;
+        };
     };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
+    for (i = 0; i < buttons.length; i++) {
+        if (buttons[i].id == `btn-${type}`) {
+            buttons[i].classList.remove("btn-sm");
+            buttons[i].classList.add("btn-md");
+        }
+        else {
+            buttons[i].classList.remove("btn-md");
+            buttons[i].classList.add("btn-sm");
+        }
     };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-});
+    if (type === "all") {
+        document.getElementById("btn-all").classList.remove ("btn-sm");
+        document.getElementById("btn-all").classList.add("btn-md");
+    };
+    if (count == 0)
+        document.getElementById("zeroCarro").classList.remove("d-none");
+    else
+        document.getElementById("zeroCarro").classList.add("d-none");
+}
