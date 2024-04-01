@@ -1,13 +1,7 @@
 @model DetailsVM
 @{
     ViewData["Title"] = "Carro";
-    string Cor(string nome)
-    {
-        return Model.Marcas
-        .Where(t => t.Nome == nome)
-        .Select(t => t.Cor)
-        .FirstOrDefault();
-    }
+
 }
 
 <section class="pt-5 container">
@@ -47,9 +41,9 @@
             <div class="btn-group">
                 @foreach (var marca in Model.Atual.Marca)
                 {
-                    <a href="#" class="btn btn-lg text-dark">
+                    <button href="#" class="btn btn-lg text-dark">
                         @marca
-                    </a>
+                    </button>
                 }
 
             </div>

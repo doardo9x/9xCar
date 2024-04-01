@@ -1,6 +1,6 @@
 [
     {
-        "Nome": "Volksvagen",
+        "Nome": "Volkswagen",
         "Logo": "\\img\\Volksvagen\\VOLKSWAGEN.png",
         "Cor" : "#adb5bd"
     },
@@ -15,7 +15,7 @@
         "Cor" : "#adb5bd"
     },
     {
-        "Nome": "hyundai",
+        "Nome": "Hyundai",
         "Logo": "\\img\\Hyundai\\HYUNDAI.png",
         "Cor" : "#adb5bd"
     }
