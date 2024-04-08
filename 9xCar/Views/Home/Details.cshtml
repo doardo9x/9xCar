@@ -4,49 +4,55 @@
 
 }
 
-<section class="pt-5 container">
-    <div class="row">
-        <div class="col text-center">
-            @if (Model.Anterior != null)
-            {
-                <a asp-action="Details" asp-route-id="@Model.Anterior.Numero" class="btn btn-lg btn-outline-dark">
-                    @Model.Anterior.Nome
-                </a>
-            }
-        </div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/details.css"/>
+}
 
-        <div class="col text-center">
-            <h1 class="fs-1">@Model.Atual.Nome
-            </h1>
-        </div>
-
-        <div class="col text-center">
-            @if (Model.Proximo != null)
-            {
-                <a asp-action="Details" asp-route-id="@Model.Proximo.Numero" class="btn btn-lg btn-outline-dark">
-                    @Model.Proximo.Nome
-                </a>
-
-            }
-        </div>
-    </div>
-
-    <div class="row mt-3">
-        <div class="col-lg-5 p-0" >
-            <img class="img-fluid cursor-pointer" src="@Model.Atual.Imagem" alt="@Model.Atual.Nome">
-        </div>
-        <div class="col-lg-7 fs-5 mt-4">
-            <p class="mb-3"><strong>Tipo</strong> @Model.Atual.Tipo</p>
-            <p class="fw-bold">Marca</p>
-            <div class="btn-group">
-                @foreach (var marca in Model.Atual.Marca)
+<div id="contPrincipal">
+    <section class="pt-5 container">
+        <div class="row Navegar">
+            <div class="col text-center">
+                @if (Model.Anterior != null)
                 {
-                    <button href="#" class="btn btn-lg text-dark">
-                        @marca
-                    </button>
+                    <a asp-action="Details" asp-route-id="@Model.Anterior.Numero" class="btn btn-lg btn-outline-dark">
+                        @Model.Anterior.Nome
+                    </a>
                 }
+            </div>
 
+            <div class="col text-center">
+                <h1 class="fs-1">@Model.Atual.Nome
+                </h1>
+            </div>
+
+            <div class="col text-center">
+                @if (Model.Proximo != null)
+                {
+                    <a asp-action="Details" asp-route-id="@Model.Proximo.Numero" class="btn btn-lg btn-outline-dark">
+                        @Model.Proximo.Nome
+                    </a>
+
+                }
             </div>
         </div>
-    </div>
-</section>
+
+        <div class="row mt-3 conteudo">
+            <div class="col-lg-5 p-0 cont-img" >
+                <img class="img-fluid cursor-pointer" src="@Model.Atual.Imagem" alt="@Model.Atual.Nome">
+            </div>
+            <div class="col-lg-7 fs-5 mt-4 cont-texto">
+                <p class="mb-3 texto"><strong>Tipo:</strong> @Model.Atual.Tipo</p>
+                <p class="fw-bold texto cont-marca">Marca</p>
+                <div class="btn-group">
+                    @foreach (var marca in Model.Atual.Marca)
+                    {
+                        <button class="btn btn-lg text-dark">
+                            @marca
+                        </button>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

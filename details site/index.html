@@ -14,12 +14,12 @@
         <section class="pt-5 container">
             <div class="row Navegar">
                 <div class="col text-center">
-                    @if (Model.Anterior != null)
-                    {
+                    
+                    
                         <a asp-action="Details" asp-route-id="@Model.Anterior.Numero" class="btn btn-lg btn-outline-dark">
-                            @Model.Anterior.Nome
+                            Modelo Anterior
                         </a>
-                    }
+                    
                 </div>
         
                 <div class="col text-center">
@@ -28,23 +28,23 @@
                 </div>
         
                 <div class="col text-center">
-                    @if (Model.Proximo != null)
-                    {
+                    
+                    
                         <a asp-action="Details" asp-route-id="@Model.Proximo.Numero" class="btn btn-lg btn-outline-dark">
-                            @Model.Proximo.Nome
+                            Proximo Modelo
                         </a>
         
-                    }
+                    
                 </div>
             </div>
         
             <div class="row mt-3 conteudo">
-                <div class="col-lg-5 p-0" >
+                <div class="col-lg-5 p-0 cont-img" >
                     <img class="img-fluid cursor-pointer" src="/9xCar/wwwroot/img/Bmw/320I-M.jpg" alt="@Model.Atual.Nome">
                 </div>
-                <div class="col-lg-7 fs-5 mt-4 texto">
-                    <p class="mb-3"><strong>Tipo</strong> suv</p>
-                    <p class="fw-bold">Marca</p>
+                <div class="col-lg-7 fs-5 mt-4 cont-texto">
+                    <p class="mb-3 texto"><strong>Tipo</strong> suv</p>
+                    <p class="fw-bold texto">Marca</p>
                     <div class="btn-group">
                         @foreach (var marca in Model.Atual.Marca)
                         {
