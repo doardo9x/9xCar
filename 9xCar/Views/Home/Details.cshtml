@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/css/details.css"/>
 }
 
+<button id="voltarBtn" class="botao-redondo">9xCar</button>
+
 <div id="contPrincipal">
     <section class="pt-5 container">
         <div class="row Navegar">
@@ -21,19 +23,19 @@
             </div>
 
             <div class="col text-center">
-                <h1 class="fs-1">@Model.Atual.Nome
-                </h1>
+                <p class=" fs-1 text-dark">@Model.Atual.Nome</p>
             </div>
 
             <div class="col text-center">
                 @if (Model.Proximo != null)
                 {
-                    <a asp-action="Details" asp-route-id="@Model.Proximo.Numero" class="btn btn-lg btn-outline-dark">
+                    <a asp-action="Details" asp-route-id="@Model.Proximo.Numero" class="btn btn-lg btn-outline-dark ">
                         @Model.Proximo.Nome
                     </a>
 
                 }
             </div>
+
         </div>
 
         <div class="row mt-3 conteudo">
@@ -41,16 +43,17 @@
                 <img class="img-fluid cursor-pointer" src="@Model.Atual.Imagem" alt="@Model.Atual.Nome">
             </div>
             <div class="col-lg-7 fs-5 mt-4 cont-texto">
-                <p class="mb-3 texto"><strong>Tipo:</strong> @Model.Atual.Tipo</p>
-                <p class="fw-bold texto cont-marca">Marca</p>
-                <div class="btn-group">
-                    @foreach (var marca in Model.Atual.Marca)
-                    {
-                        <button class="btn btn-lg text-dark">
-                            @marca
+                <p class="text-dark texto">
+                    <p class=" fw-bold spacet">
+                        Tipo:
+                    </p>
+                    @Model.Atual.Tipo
+                </p>
+                <p class="fw-bold texto cont-marca colortext">Marca</p>
+                <div class="btn-group cont-but">
+                        <button class="btn btn-lg text-dark fs-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="butmarca">
+                            @Model.Atual.Marca
                         </button>
-                    }
-
                 </div>
             </div>
         </div>

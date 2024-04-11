@@ -13077,3 +13077,10 @@ body {
     padding-top: 20px;
 }
 
+.efeitobotao:hover{
+  transform: scale(1.07);
+}
+
+.efeitocard:hover{
+  transform: scale(1.05);
+}

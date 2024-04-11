@@ -47,21 +47,21 @@
                 </p>
             </div>
         </div>
-        <img class="img-fluid" src="assets/img/x6.png" alt="..." />
+        <img class="img-fluid" src="~/assets/img/x6.png" alt="foto bmwx6"/>
     </div>
 </section>
 
 <section class="pt-5 pb-3 text-center container">
     <div class="row">
         <div class="col mx-auto">
-            <p class="text-dark">Marcas</p>
+            <p class=" fs-1 text-dark">Marcas</p>
             <div class="group"> 
-                <button id="btn-all" class="btn btn-md my-2 text-white bg-dark btn-filter" onclick="filter('all')">
+                <button id="btn-all" class="btn btn-md my-2 text-white bg-dark btn-filter efeitobotao" onclick="filter('all')">
                     Ver Todos
                 </button>
                 @foreach (var marca in marcas)
                 {
-                    <button id="btn-@marca.Nome" class="btn btn-sm my-2 text-dark btn-filter"
+                    <button id="btn-@marca.Nome" class="btn btn-sm my-2 text-dark btn-filter efeitobotao"
                         style="background-color: @marca.Cor" onclick="filter('@marca.Nome')"> 
                         @marca.Nome
                     </button>
@@ -77,7 +77,7 @@
             @foreach (var carro in Model)
             {
                 <!-- Card Carros -->
-                <div class="card @carro.Marca" style="width: 18rem;">
+                <div class="card @carro.Marca efeitocard" style="width: 18rem;">
                     <img src="@carro.Imagem" class="card-img-top" alt="@carro.Nome">
                     <div class="card-body">
                         <div class="cont-title center">

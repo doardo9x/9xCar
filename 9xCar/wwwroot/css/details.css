@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     border: 0;
     padding: 0;
@@ -12,11 +14,13 @@ html, body{
 
 .conteudo {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cont-img{
     width: 50%;
+    min-width: 400px;
 }
 
 .cont-texto
@@ -26,6 +30,8 @@ html, body{
     flex-wrap: wrap;
     height: 100%;
     width: 50%;
+    min-width: 200px;
+    cursor: default;
 }
 
 .texto {
@@ -35,5 +41,54 @@ html, body{
 }
 
 .cont-marca{
-    padding-top: 50px;
+    padding-top: 20px;
+}
+
+#butmarca{
+    width: 300px;
+    font-size: 200px;
+    box-shadow: 200px;
+    cursor: default;
+}
+
+.spacet{
+    padding-right: 5px;
+    color: rgb(69, 69, 69);
+}
+
+.Navegar{
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.colortext{
+    color: rgb(69, 69, 69);
+}
+
+.detailsheader{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rgb(238, 238, 238);
+}
+
+.botao-redondo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #bf8181;
+    color: #420563;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 10);
+    font-family: "Dancing Script", cursive;
+}
+
+.botao-redondo:hover {
+    background-color: #413a3a;
+    color: wheat;
 }
