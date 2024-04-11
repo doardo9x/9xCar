@@ -78,7 +78,10 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("voltarBtn").addEventListener("click", function() {
-        window.location.href = "/Home/";
-    });
+    var voltarBtn = document.getElementById("voltarBtn");
+    if (voltarBtn) {
+        voltarBtn.addEventListener("click", function() {
+            window.location.href = "/Home/";
+        });
+    }
 });
